@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 html,
 body {
     font-size: 16px;
@@ -8,8 +14,10 @@ body {
 body {
     background: #10131c;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    border: 3px solid #6630A4;
+    width: 50%;
+
 }
 
 button {
@@ -20,42 +28,29 @@ button {
 }
 
 .screen {
-    border-radius: .75rem;
-    font-size: 2rem;
-    height: 2rem;
+
     color: #fff;
     background: #333849;
-    text-align: end;
-    padding: .5rem;
+
 }
 
 .calculator {
     background: #212532;
-    display: grid;
-    grid-template-columns: (4, 2fr);
-    gap: .75rem;
-    width: 325px;
     border: 1px solid #333;
-    border-radius: 1rem;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 ::placeholder {
     color: #fff;
 }
 
+#row1 {
+    display: flex;
+
+}
+
 .symbol,
 .number {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 1.25rem;
     color: #fff;
-    border-radius: 50%;
 }
 
 .symbol {
