@@ -1,13 +1,13 @@
 console.log('linked');
 
-const buttons = document.querySelectorAll('button')
+const buttons = document.querySelectorAll('.notequals')
 // selects everything from html that has 'button'
 const screen = document.querySelector('#screen')
 // finds element with id of 'screen'
 console.log(buttons)
 
 
-const filledDisplay = [];
+let filledDisplay = [];
 // empty array that is going to store what we clicked
 for (let button of buttons) {
     button.addEventListener('click', function (event) {
@@ -35,5 +35,6 @@ equalButton.addEventListener('click', function (event) {
 let clearButton = document.querySelector('#clear');
 clearButton.addEventListener('click', function (event) {
     screen.innerText = ""
+    filledDisplay = [];
     // add some sort of "remove"
 })
