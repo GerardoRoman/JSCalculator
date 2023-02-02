@@ -2,14 +2,14 @@ body {
     font-family: Open Sans;
     background-color: #10131c;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 50%;
 }
 
 section {
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 100%;
 }
 
 div {
@@ -27,6 +27,8 @@ button {
     outline: none;
     background: none;
     cursor: pointer;
+    flex-basis: 0;
+    flex-grow: 1;
 }
 
 button:focus {
@@ -49,11 +51,13 @@ button:focus {
 .screen {
     border-radius: .75rem;
     font-size: 2rem;
-    height: 4rem;
+    height: 3rem;
     color: #fff;
     background: #333849;
     text-align: end;
     padding: .5rem;
+    flex-basis: 0;
+    flex-grow: 5;
 }
 
 .symbol,
